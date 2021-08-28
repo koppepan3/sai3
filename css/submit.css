@@ -1,0 +1,61 @@
+a {
+	outline: none;
+	text-decoration: none;
+	transition: all 0.1s linear;
+}
+
+.title h1{
+	font-family:"Century Gothic";
+}
+
+body{
+	text-align: center;
+	font-size: 20px;
+}
+
+.submittion{
+	text-align:center;
+	width: 90%;
+	margin-left:5%;
+	box-shadow: 0 0 4px #002918;
+	height: 260px;	
+}
+
+.pulldown{
+	width: 80px;
+	padding: 8px 8px;
+	border: none;
+	border-radius: 10px;
+	background-color: #f1f1f1;
+	outline: 0;
+	-webkit-appearance: none;
+}
+
+.min input[type=textarea]{
+	border-radius:14px;
+	padding: 5px 5px;
+	box-sizing:border-box;
+	padding: 8px;
+	font-size:12px;
+	outline: 0;
+	margin-bottom:15px;
+	border: none;
+	background-color: #f1f1f1;
+	-webkit-appearance: none;
+}
+
+.min input[type=textarea]:focus{
+	background-color: rgb(9, 97, 180)ce;
+	border: 0.5px solid black;
+	-webkit-appearance: none;
+}
+
+.button{
+	border-radius: 15px;
+	background-color: #2041acce;
+	border: none;
+	color: white;
+	padding: 5px 15px;
+	text-decoration: none;
+	-webkit-appearance: none;
+}

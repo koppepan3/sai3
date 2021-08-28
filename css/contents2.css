@@ -1,0 +1,96 @@
+  
+
+/* reset
+--------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, select, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	border: 0;
+}
+
+/* general
+--------------------------------------------------*/
+
+/* link */
+a {
+	color: #058dc7;
+	outline: none;
+	text-decoration: none;
+	transition: all 0.1s linear;
+}
+
+/* clearfix */
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* layout
+--------------------------------------------------*/
+
+/* body */
+body {
+	font-size: 14px;
+	font-family: 'M PLUS 1p', sans-serif;
+	line-height: 1.8;
+	letter-spacing: 0.1em;
+}
+
+h2 { font-weight: bold; }
+
+img{
+	width: 36vw;
+	position: fixed;
+	top:5vh;
+	left:10vw;
+}
+
+.signage{
+	position:fixed;
+	right:10vw;
+	top:5vh;
+	width: 40vw;
+	/* border-left: 0.1vw solid #058dc7; */
+}
+
+.signage p{
+	font-size: 1.5vw;
+	color: black;
+}
+
+.signage h1{
+	font-size: 2vw;
+	color: black;
+	line-height: normal;
+	display: inline-block;
+	margin-left: 2vw;
+}
+
+table, th, td {
+	border-collapse: collapse;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
+	padding: 0.8vh;
+	font-size: 1.3vw;
+}
+
+th{
+	background-color: rgba(6, 202, 127, 0.884);
+	color: white;
+}
+
+td{
+	width: 10VW;
+}
+
+.blank{
+	background-color: white;
+	height: 5vh;
+}

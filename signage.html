@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signage</title>
+  <link rel="stylesheet" href="css/signage.css">
+  <script>
+    function set2fig(num) {
+   // 桁数が1桁だったら先頭に0を加えて2桁に調整する
+   var ret;
+   if( num < 10 ) { ret = "0" + num; }
+   else { ret = num; }
+   return ret;}
+    function showClock1() {
+    var nowTime = new Date();
+    var nowHour = nowTime.getHours();
+    var nowMin  = nowTime.getMinutes();
+    var msg = "6月4日　" + nowHour + ":" + nowMin ;
+    document.getElementById("RealtimeClockArea").innerHTML = msg;
+    }
+setInterval('showClock1()',1000);
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="trapezoid-left"></div>
+    <div class="trapezoid-right"></div>
+    <div class="notifications">
+      <p class="title">
+        <お知らせ>
+      </p>
+      <div class="text">
+        <p>現在お知らせはありません。</p>
+      </div>
+    </div>
+  </div>
+  <div class="contents">
+    <iframe src="contents2.php"></iframe>
+  </div>
+  <div class="footer">
+    <h1>彩西祭</h1>
+    <p class="clock" id="RealtimeClockArea">現在時刻</p>
+  </div>
+</body>
+
+</html>
