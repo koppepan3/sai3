@@ -148,6 +148,7 @@ $c26 = get_count('26');
 
 		var waiting26 = <?php echo $c26 ?> ; 
 		changeColor(waiting26, 26);
+		
 	}
 
 	function changeColor(waiting, hr){
