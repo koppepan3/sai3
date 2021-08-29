@@ -132,7 +132,7 @@ $c26 = get_count('26');
 		changeColor(waiting17, 17);
 
 		var waiting21 = <?php echo $c21 ?> ; 
-		changeColor(waiting22, 22);
+		changeColor(waiting21, 21);
 
 		var waiting22 = <?php echo $c22 ?> ; 
 		changeColor(waiting22, 22);
