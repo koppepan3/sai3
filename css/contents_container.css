@@ -43,18 +43,9 @@ body {
 
 h2 { font-weight: bold; }
 
-img{
-	width: 36vw;
-	position: fixed;
-	top:5vh;
-	left:10vw;
-}
-
 .signage{
-	position:fixed;
-	right:10vw;
-	top:5vh;
-	width: 40vw;
+	margin-left: 5vw;
+	width: 50vw;
 	/* border-left: 0.1vw solid #058dc7; */
 }
 
