@@ -49,6 +49,7 @@ $c26 = get_count('26');
 	<div class="signage">
 		<div class="container_left">
 			<table style="width:50%">
+				<tr class="table_title"><td>#</td><th>状況</th></tr>
 				<tr>
 					<td>11HR</td>
 					<th id="cell11"><?= get_count('11') ?>分</th>
@@ -155,6 +156,7 @@ $c26 = get_count('26');
 		
 	}
 
+/*
 	function changeColor(waiting, hr){
 		let hr_id = 'cell' + hr ;
 		var obj = document.getElementById(hr_id); 
@@ -165,6 +167,7 @@ $c26 = get_count('26');
 		}else{
 		}
 	}
+*/
 
 	window.onload = classify();
 	</script>
