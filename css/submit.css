@@ -4,13 +4,28 @@ a {
 	transition: all 0.1s linear;
 }
 
-.title h1{
-	font-family:"Century Gothic";
+.header h1{
+	font-size: 3vh;
+	text-align: left !important;
+	color: white;
+	margin: 0;
+	margin-left: 3vh;
+}
+
+.header{
+	height: 5vh;
+	width: 100vw;
+	background-color: rgb(47, 185, 174);
+	margin: 0;
+	padding: 0;
 }
 
 body{
 	text-align: center;
 	font-size: 20px;
+	font-family: 'M PLUS 1p', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .submittion{
