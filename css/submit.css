@@ -48,7 +48,7 @@ body{
 	outline: 0;
 	-webkit-appearance: none;
 	border-bottom: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736efe 100%);
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
   	border-image-slice: 1;
 	background-image: url(../files/down-arrow.png);
   	background-position: right 10px center;
@@ -63,7 +63,7 @@ body{
   	background-size: 15px 15px;
 	-webkit-appearance: none;
 	border: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736efe 100%);
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
   	border-image-slice: 1;
 }
 
@@ -80,13 +80,13 @@ body{
 	background-color: white;
 	-webkit-appearance: none;
 	border-bottom: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736efe 100%);
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
   	border-image-slice: 1;
 }
 
 .min input[type=textarea]:focus{
 	border: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736efe 100%);
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
   	border-image-slice: 1;
 	-webkit-appearance: none;
 }
@@ -94,7 +94,7 @@ body{
 
 
 .btn {
-	background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+	background-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
 	border-radius: 20px;
   	box-sizing: border-box;
 	color: #00a84f;
