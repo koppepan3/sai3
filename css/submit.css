@@ -7,12 +7,14 @@ a {
 .header h1{
 	font-size: 3vh;
 	text-align: left !important;
+	font-weight: lighter;
 	color: white;
 	margin: 0;
 	margin-left: 3vh;
 }
 
 .header{
+	font-family: 'Noto Sans JP', sans-serif;
 	height: 5vh;
 	width: 100vw;
 	background-color: rgb(47, 185, 174);
@@ -23,7 +25,6 @@ a {
 body{
 	text-align: center;
 	font-size: 20px;
-	font-family: 'M PLUS 1p', sans-serif;
 	margin: 0;
 	padding: 0;
 	height: 95vh;
@@ -31,6 +32,7 @@ body{
 }
 
 .submittion{
+	font-family: 'M PLUS 1p', sans-serif;
 	text-align:center;
 	width: 90%;
 	margin-left:5%;
@@ -46,8 +48,10 @@ body{
 	background-color: white;
 	outline: 0;
 	-webkit-appearance: none;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) 1/0 0 2px 0; /*ちゃんと動いてるやつ*/
-  	border-image-slice: 1;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: 1px black solid;
 	border-style: solid;
 	background-image: url(../files/down-arrow.png);
   	background-position: right 10px center;
@@ -73,14 +77,14 @@ body{
 	box-sizing:border-box;
 	padding: 8px;
 	font-size:18px;
-	border: none;
 	outline: 0;
 	margin-bottom:15px;
 	background-color: white;
 	-webkit-appearance: none;
-	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) 1/0 0 2px 0; /*ちゃんと動いてるやつ*/
-  	border-image-slice: 1;
-	border-style: solid;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: 1px black solid;
 }
 
 .min input[type=number]:focus{
