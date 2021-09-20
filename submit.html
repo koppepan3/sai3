@@ -20,7 +20,7 @@
       <form action="vote.php" method="post" name="form1">
         <div class="hr">
           <p>HR</p>
-          <select name="file" class="pulldown">
+          <select name="file" class="pulldown" required="required">
             <option>11</option>
             <option>12</option>
             <option>13</option>
@@ -38,7 +38,7 @@
         </div>
         <div class="min">
           <p>待ち時間</p>
-          <input  type="number" name="count" value="" class="mininput">
+          <input  type="number" name="count" value="" class="mininput" required="required">
           <br>
           <a  class="btn" href="javascript:form1.submit()">
             <span>送信</span>
