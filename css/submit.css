@@ -62,9 +62,6 @@ body{
   	background-repeat: no-repeat;
   	background-size: 15px 15px;
 	-webkit-appearance: none;
-	border: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
-  	border-image-slice: 1;
 }
 
 .min input[type=textarea]{
@@ -85,10 +82,6 @@ body{
 }
 
 .min input[type=textarea]:focus{
-	border: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
-  	border-image-slice: 1;
-	-webkit-appearance: none;
 }
 
 
@@ -97,7 +90,7 @@ body{
 	background-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
 	border-radius: 20px;
   	box-sizing: border-box;
-	color: #00a84f;
+	color: #736EFE;
 	display: block;
 	height: 40px;
 	letter-spacing: 1px;
