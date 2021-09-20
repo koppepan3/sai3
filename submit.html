@@ -11,10 +11,10 @@
   </head>
   <body>
     <div class="header">
-      <h1 class="title">彩西祭サイネージ更新</h1>
+      <h1 class="title">彩西祭/サイネージ更新フォーム</h1>
     </div>
     <div class="submittion">
-      <form action="vote.php" method="post">
+      <form action="vote.php" method="post" name="form1">
         <div class="hr">
           <p>HR</p>
           <select name="file" class="pulldown">
@@ -37,7 +37,9 @@
           <p>待ち時間</p>
           <input type="textarea" name="count" value="" class="mininput">
           <br>
-          <input type="submit" value="送信" class="button">
+          <a class="btn" href="javascript:form1.submit()">
+            <span>送信</span>
+          </a>
         </div>
       </form>
     </div>

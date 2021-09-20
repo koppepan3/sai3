@@ -37,40 +37,90 @@ body{
 }
 
 .pulldown{
+	font-size:18px;
 	width: 80px;
 	padding: 8px 8px;
 	border: none;
-	border-radius: 10px;
-	background-color: #f1f1f1;
+	background-color: white;
 	outline: 0;
 	-webkit-appearance: none;
+	border-bottom: 2px solid #006175;
+  	border-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  	border-image-slice: 1;
+	background-image: url(../files/down-arrow.png);
+  	background-position: right 10px center;
+  	background-repeat: no-repeat;
+  	background-size: 15px 15px;
+}
+
+.pulldown:focus{
+	background-image: url(../files/up-arrow.png);
+  	background-position: right 10px center;
+  	background-repeat: no-repeat;
+  	background-size: 15px 15px;
+	-webkit-appearance: none;
+	border: 2px solid #006175;
+  	border-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  	border-image-slice: 1;
 }
 
 .min input[type=textarea]{
-	border-radius:14px;
 	padding: 5px 5px;
 	box-sizing:border-box;
 	padding: 8px;
-	font-size:12px;
+	font-size:18px;
 	outline: 0;
 	margin-bottom:15px;
-	border: none;
-	background-color: #f1f1f1;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	background-color: white;
 	-webkit-appearance: none;
+	border-bottom: 2px solid #006175;
+  	border-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  	border-image-slice: 1;
 }
 
 .min input[type=textarea]:focus{
-	background-color: rgb(9, 97, 180)ce;
-	border: 0.5px solid black;
+	border: 2px solid #006175;
+  	border-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  	border-image-slice: 1;
 	-webkit-appearance: none;
 }
 
-.button{
-	border-radius: 15px;
-	background-color: #2041acce;
-	border: none;
-	color: white;
-	padding: 5px 15px;
-	text-decoration: none;
-	-webkit-appearance: none;
+
+
+.btn {
+	background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+	border-radius: 20px;
+  	box-sizing: border-box;
+	color: #00a84f;
+	display: block;
+	height: 40px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 2px;
+	position: relative;
+  	text-decoration: none;
+	width: 100px;
+	z-index: 2;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.btn span {
+	align-items: center;
+	background: #ffffff;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+
+.btn:hover span {
+	background: transparent;
 }
