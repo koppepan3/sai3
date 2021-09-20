@@ -26,14 +26,17 @@ body{
 	font-family: 'M PLUS 1p', sans-serif;
 	margin: 0;
 	padding: 0;
+	height: 95vh;
+	width: 100vw;
 }
 
 .submittion{
 	text-align:center;
 	width: 90%;
 	margin-left:5%;
-	box-shadow: 0 0 4px #002918;
+	
 	height: 260px;	
+	background-color: white;
 }
 
 .pulldown{
@@ -44,8 +47,8 @@ body{
 	background-color: white;
 	outline: 0;
 	-webkit-appearance: none;
-	border-bottom: 2px solid #006175;
-  	border-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+	border-bottom: 2px solid #5EFCE8;
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736efe 100%);
   	border-image-slice: 1;
 	background-image: url(../files/down-arrow.png);
   	background-position: right 10px center;
@@ -59,8 +62,8 @@ body{
   	background-repeat: no-repeat;
   	background-size: 15px 15px;
 	-webkit-appearance: none;
-	border: 2px solid #006175;
-  	border-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+	border: 2px solid #5EFCE8;
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736efe 100%);
   	border-image-slice: 1;
 }
 
@@ -71,19 +74,19 @@ body{
 	font-size:18px;
 	outline: 0;
 	margin-bottom:15px;
-	border-left: none;
-	border-right: none;
-	border-top: none;
+	border-left: none !important;
+	border-right: none !important;
+	border-top: none !important;
 	background-color: white;
 	-webkit-appearance: none;
-	border-bottom: 2px solid #006175;
-  	border-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+	border-bottom: 2px solid #5EFCE8;
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736efe 100%);
   	border-image-slice: 1;
 }
 
 .min input[type=textarea]:focus{
-	border: 2px solid #006175;
-  	border-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+	border: 2px solid #5EFCE8;
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736efe 100%);
   	border-image-slice: 1;
 	-webkit-appearance: none;
 }
