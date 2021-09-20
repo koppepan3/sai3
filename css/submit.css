@@ -47,8 +47,7 @@ body{
 	background-color: white;
 	outline: 0;
 	-webkit-appearance: none;
-	border-bottom: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) 1/0 0 1px 0;
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) 1/0 0 2px 0; /*ちゃんと動いてるやつ*/
   	border-image-slice: 1;
 	border-style: solid;
 	background-image: url(../files/down-arrow.png);
@@ -59,6 +58,10 @@ body{
 }
 
 .pulldown:focus{
+	border: 2px solid #5EFCE8;
+	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) ; /*ちゃんと動いてるやつ*/
+  	border-image-slice: 1;
+	border-style: solid;
 	background-image: url(../files/up-arrow.png);
   	background-position: right 10px center;
   	background-repeat: no-repeat;
@@ -78,12 +81,16 @@ body{
 	border-top: none !important;
 	background-color: white;
 	-webkit-appearance: none;
-	border-bottom: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
+	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) 1/0 0 2px 0; /*ちゃんと動いてるやつ*/
   	border-image-slice: 1;
+	border-style: solid;
 }
 
 .min input[type=textarea]:focus{
+	border: 2px solid #5EFCE8;
+	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) ; /*ちゃんと動いてるやつ*/
+  	border-image-slice: 1;
+	border-style: solid;
 }
 
 
