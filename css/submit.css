@@ -74,11 +74,9 @@ body{
 	box-sizing:border-box;
 	padding: 8px;
 	font-size:18px;
+	border: none;
 	outline: 0;
 	margin-bottom:15px;
-	border-left: none !important;
-	border-right: none !important;
-	border-top: none !important;
 	background-color: white;
 	-webkit-appearance: none;
 	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) 1/0 0 2px 0; /*ちゃんと動いてるやつ*/
