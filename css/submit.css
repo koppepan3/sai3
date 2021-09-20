@@ -9,17 +9,22 @@ a {
 	text-align: left !important;
 	font-weight: lighter;
 	color: white;
-	margin: 0;
+	margin-top: 0px;
+	margin-bottom:0px;
 	margin-left: 3vh;
+	vertical-align: middle;
 }
 
 .header{
 	font-family: 'Noto Sans JP', sans-serif;
-	height: 5vh;
+	height: 6vh;
 	width: 100vw;
 	background-color: rgb(47, 185, 174);
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
 }
 
 body{
