@@ -48,8 +48,9 @@ body{
 	outline: 0;
 	-webkit-appearance: none;
 	border-bottom: 2px solid #5EFCE8;
-  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
+  	border-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%) 1/0 0 1px 0;
   	border-image-slice: 1;
+	border-style: solid;
 	background-image: url(../files/down-arrow.png);
   	background-position: right 10px center;
   	background-repeat: no-repeat;
