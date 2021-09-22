@@ -2,6 +2,7 @@
 // カウントアップ処理
 $file	= $_POST['file'];
 $count	= $_POST['count'];
+$status	= $_POST['status'];
 
 if ($file && $count) {
 	$filename = 'data/'.$file.'.dat';
