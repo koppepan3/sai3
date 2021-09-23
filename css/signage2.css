@@ -105,10 +105,11 @@ body {
 }
 
 iframe{
-	width: 80vw;
+	width: 90vw;
 	height: 85vh;
 	border: none;
 	margin-top: 2vh;
+	margin-left: 5vw;
 }
 
 .footer{
