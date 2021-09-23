@@ -1,7 +1,8 @@
 <?php
-// カウントアップ処理
+// フォームで入力されたデータの処理
 $file	= $_POST['file'];
 $count	= $_POST['count'];
+$status	= $_POST['status'];
 
 if ($file && $count) {
 	$filename = 'data/'.$file.'.dat';
@@ -10,6 +11,12 @@ if ($file && $count) {
 	fputs($fp, $count);
 	flock($fp, LOCK_UN);
 	fclose($fp);
+	$filename2 = 'data/'.$file.'status.dat';
+	$fp2 = @fopen($filename2, 'w');
+	flock($fp2, LOCK_EX);
+	fputs($fp2, $status);
+	flock($fp2, LOCK_UN);
+	fclose($fp2);
 	echo '
 	<!DOCTYPE html>
 	<html lang="ja">

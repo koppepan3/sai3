@@ -11,10 +11,15 @@ function get_count($file) {
 	return $vote;
 }
 
-function load_hr($hr) {
-	$xml = simplexml_load_file('data\hr_description.xml');
-	$class = "hr".$hr;
-	return $xml-> $class -> description;
+function get_status($file) {
+	$filename2 = 'data/'.$file.'status.dat';
+	$fp2 = @fopen($filename2, 'r');
+	if ($fp2) {
+		$vote = fgets($fp2, 9182);
+	} else {
+		$vote = '-';
+	}
+	return $vote;
 }
 
 $c11 = get_count('11');
@@ -49,37 +54,40 @@ $c26 = get_count('26');
 	<div class="signage">
 		<div class="container_left">
 			<table style="width:50%">
-				<tr class="table_title"><td>#</td><th>状況</th></tr>
+				<tr class="table_title"><td>#</td><th>状況</th><th>混雑</th></tr>
 				<tr>
 					<td>11HR</td>
+					<th id="status11"><?= get_status('11') ?></th>
 					<th id="cell11"><?= get_count('11') ?>分</th>
 				</tr>
 				<tr>
 					<td>12HR</td>
+					<th id="status12"><?= get_status('12') ?></th>
 					<th id="cell12"><?= get_count('12') ?>分</th>
 				</tr>
 				<tr>
 					<td>13HR</td>
+					<th id="status13"><?= get_status('13') ?></th>
 					<th id="cell13"><?= get_count('13') ?>分</th>
 				</tr>
 				<tr>
 					<td>14HR</td>
+					<th id="status14"><?= get_status('14') ?></th>
 					<th id="cell14"><?= get_count('14') ?>分</th>
 				</tr>
-			</table>
-		</div>
-		<div class="container_right">
-			<table style="width:50%">
 				<tr>
 					<td>15HR</td>
+					<th id="status15"><?= get_status('15') ?></th>
 					<th id="cell15"><?= get_count('15') ?>分</th>
 				</tr>
 				<tr>
 					<td>16HR</td>
+					<th id="status16"><?= get_status('16') ?></th>
 					<th id="cell16"><?= get_count('16') ?>分</th>
 				</tr>
 				<tr>
 					<td>17HR</td>
+					<th id="status17"><?= get_status('17') ?></th>
 					<th id="cell17"><?= get_count('17') ?>分</th>
 				</tr>
 				<tr>
@@ -88,32 +96,39 @@ $c26 = get_count('26');
 				</tr>
 				<tr>
 					<td>21HR</td>
+					<th id="status21"><?= get_status('21') ?></th>
 					<th id="cell21"><?= get_count('21') ?>分</th>
 				</tr>
 				<tr>
 					<td>22HR</td>
+					<th id="status22"><?= get_status('22') ?></th>
 					<th id="cell22"><?= get_count('22') ?>分</th>
 				</tr>
 				<tr>
 					<td>23HR</td>
+					<th id="status23"><?= get_status('23') ?></th>
 					<th id="cell23"><?= get_count('23') ?>分</th>
 				</tr>
 				<tr>
 					<td>24HR</td>
+					<th id="status24"><?= get_status('24') ?></th>
 					<th id="cell24"><?= get_count('24') ?>分</th>
 				</tr>
 				<tr>
 					<td>25HR</td>
+					<th id="status25"><?= get_status('25') ?></th>
 					<th id="cell25"><?= get_count('25') ?>分</th>
 				</tr>
 				<tr>
 					<td>26HR</td>
+					<th id="status26"><?= get_status('26') ?></th>
 					<th id="cell26"><?= get_count('26') ?>分</th>
 				</tr>
 			</table>
 		</div>
 	</div>
 	<script type="text/javascript">
+/*
 	function classify(){
 		var waiting11 = <?php echo $c11 ?> ; 
 		changeColor(waiting11, 11);
@@ -156,7 +171,7 @@ $c26 = get_count('26');
 		
 	}
 
-/*
+
 	function changeColor(waiting, hr){
 		let hr_id = 'cell' + hr ;
 		var obj = document.getElementById(hr_id); 
