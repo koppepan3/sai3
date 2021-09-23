@@ -43,12 +43,12 @@ body {
 }
 
 .header h1{
-	font-size: 4.5vh;
+	font-size: 65px;
 	color: white;
 	vertical-align: middle;
 	display: table-cell;
 	padding-left: 5vw;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .title{
