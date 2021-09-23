@@ -136,37 +136,37 @@ $c26 = get_count('26');
 			<table style="width:100%">
 				<tr class="table_title"><td>#</td><th>状況</th><th>混雑</th></tr>
 				<tr>
-					<td>21HR</td>
-					<th id="status21"><?= get_status('21') ?></th>
-					<th id="cell21"><?= get_count('21') ?>分</th>
+					<td>31HR</td>
+					<th id="status31"><?= get_status('31') ?></th>
+					<th id="cell31"><?= get_count('31') ?>分</th>
 				</tr>
 				<tr>
-					<td>22HR</td>
-					<th id="status22"><?= get_status('22') ?></th>
-					<th id="cell22"><?= get_count('22') ?>分</th>
+					<td>32HR</td>
+					<th id="status32"><?= get_status('32') ?></th>
+					<th id="cell32"><?= get_count('32') ?>分</th>
 				</tr>
 				<tr>
-					<td>23HR</td>
-					<th id="status23"><?= get_status('23') ?></th>
-					<th id="cell23"><?= get_count('23') ?>分</th>
+					<td>33HR</td>
+					<th id="status33"><?= get_status('33') ?></th>
+					<th id="cell33"><?= get_count('33') ?>分</th>
 				</tr>
 				<tr>
-					<td>24HR</td>
-					<th id="status24"><?= get_status('24') ?></th>
-					<th id="cell24"><?= get_count('24') ?>分</th>
+					<td>34HR</td>
+					<th id="status24"><?= get_status('34') ?></th>
+					<th id="cell24"><?= get_count('34') ?>分</th>
 				</tr>
 				<tr>
-					<td>25HR</td>
-					<th id="status25"><?= get_status('25') ?></th>
-					<th id="cell25"><?= get_count('25') ?>分</th>
+					<td>35HR</td>
+					<th id="status25"><?= get_status('35') ?></th>
+					<th id="cell25"><?= get_count('35') ?>分</th>
 				</tr>
 				<tr>
-					<td>26HR</td>
-					<th id="status26"><?= get_status('26') ?></th>
-					<th id="cell26"><?= get_count('26') ?>分</th>
+					<td>36HR</td>
+					<th id="status26"><?= get_status('36') ?></th>
+					<th id="cell26"><?= get_count('36') ?>分</th>
 				</tr>
 				<tr>
-					<td>27HR</td>
+					<td>37HR</td>
 					<th></th>
 					<th></th>
 				</tr>
