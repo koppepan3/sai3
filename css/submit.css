@@ -101,27 +101,30 @@ body{
 
 
 
-.btn {
-	background-image: linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
-	border-radius: 20px;
-  	box-sizing: border-box;
-	color: #736EFE;
-	display: block;
-	height: 40px;
+.button {
 	letter-spacing: 1px;
 	margin: 0 auto;
 	padding: 2px;
 	position: relative;
   	text-decoration: none;
 	width: 100px;
-	z-index: 2;
+  	height: 40px;
+  	border: double 1px transparent;
+	border-radius: 20px;
+	background-image: linear-gradient(white, white), 
+	linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	color: black;
+	transition: background .5s ease;
+	
 }
 
-.btn:hover {
-	color: #fff;
-}
+.button:hover {
+	background-image:linear-gradient(to right, #5EFCE8 0%, #736EFE 100%);
+} 
 
-.btn span {
+.button span {
 	align-items: center;
 	background: #ffffff;
 	border-radius: 20px;
@@ -130,8 +133,12 @@ body{
 	height: 100%;
 	transition: background .5s ease;
 	width: 100%;
+	font-size: 20px;
+	color: #736EFE;
 }
 
-.btn:hover span {
+.button:hover span {
 	background: transparent;
+	color: white;
 }
+
