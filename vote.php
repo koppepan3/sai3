@@ -17,6 +17,8 @@ if ($file && $count) {
 	fputs($fp2, $status);
 	flock($fp2, LOCK_UN);
 	fclose($fp2);
+	setcookie("classsaved",$file,time()+60*60*24*14);
+ 	setcookie("statussaved",$status,time()+60*60*24*14);
 	echo '
 	<!DOCTYPE html>
 	<html lang="ja">
@@ -56,7 +58,7 @@ if ($file && $count) {
 	  </head>
 	  <body>
 		<h1 class="title">送信成功</h1>
-		<a href="submit.html"><input value="再送信" class="button"></a>
+		<a href="submit.php"><input value="再送信" class="button"></a>
 	  </body>
 	</html>';
 }
